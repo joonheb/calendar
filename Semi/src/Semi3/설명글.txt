@@ -1,0 +1,33 @@
+실행 못한 부분 (메소드에 /*로 적어놓음)
+1. main 메모아이콘 클릭시 나오는 scrollpanememo 투명화 못함
+2. 2번클릭시 메모장 사라지는거 안됨
+3. Daycalendar에서 취소 누르면 main 라벨이 현재 날짜로 변경되어야 하는데 안됨
+
+DTO 메소드 : 전달할 정보를 담고 있는 메소드
+->mainpage : static (메인 페이지를 변경하는 것으로 데이터 저장 x)
+->timepage : static (시간 페이지를 변경하는 것으로 데이터 저장 x)
+
+DAO 메소드 : DB로 전달해줄 메소드
+->insert 기능만 있다.
+
+Hcalendar 메소드 : main라벨과 Datcalendar 라벨에 날짜 입력할때 사용
+
+UI 메소드 : main화면 창
+*UI 메소드를 호출할때*
+    UI ui=new UI();
+    ui.UIview();
+-> mom : 모든 패널을 담고 있는 패널
+->panelmom : 배경 이미지 삽입(static)
+->timeup : 날짜 위에 칸(static)
+->timedown : 날짜 아래 칸 (static)
+->check : start메소드에서 DAO에게 정보를 넘겨준다. (181,182번줄에 있음)
+
+DialogColor 메소드 : 색상테마 변경하는 창
+-> mainpage메소드 : main화면의 이미지를 변경해준다.
+
+Datcalendar 메소드 : 날짜 지정 위에 창
+->label 메소드 : 라벨 5개를 생성
+->timelabel 메소드 : 라벨배열에 날짜 넣어줌 / 메인창 라벨에 글자 넣어줌
+
+Datcalendar2 메소드 : 날짜 지정 아래 창
+Datcalendar와 동일
